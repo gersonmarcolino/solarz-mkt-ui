@@ -429,6 +429,22 @@
       ]
     },
     {
+      "name": "esqueletos",
+      "type": "registry:component",
+      "description": "Esqueletos de carregamento por tipo de tela (painel, lista, detalhe, formulario) com a casca do hub; use no loading.tsx.",
+      "registryDependencies": [
+        "@solarz/theme",
+        "@solarz/skeleton",
+        "@solarz/utils"
+      ],
+      "files": [
+        {
+          "path": "registry/solarz/blocks/esqueletos.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "section-card",
       "type": "registry:component",
       "description": "Bloco com cabecalho, subtitulo e acoes.",

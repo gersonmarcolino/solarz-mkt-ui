@@ -4,3 +4,4 @@
 - **2026-11-11** — Repo público; registry servido por `raw.githubusercontent.com/.../main/public/r/{name}.json`. Instalação provada pela URL pública num projeto vazio: `shadcn add @solarz/theme @solarz/button @solarz/dialog @solarz/stat-card @solarz/section-card` criou 5 arquivos e gravou o tema.
 - **2026-11-11** — StatCard: icone sempre laranja; README atualizado (laranja e acento, nunca acao).
 - **2026-11-11** — `button` com canto `rounded-lg` (padrao do hub, era pilula); `label` com prop `obrigatorio` (asterisco).
+- **2026-11-11** — Bloco `esqueletos` (painel, lista, detalhe, formulario, com a casca); `skeleton` em `bg-foreground/10` (o `bg-muted` sumia sobre branco).

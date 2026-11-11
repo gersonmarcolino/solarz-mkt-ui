@@ -8,6 +8,7 @@ const NS = "@solarz";
 const NPM = ["radix-ui", "lucide-react", "class-variance-authority", "sonner", "next-themes", "clsx", "tailwind-merge"];
 
 const DESCRICAO = {
+  "esqueletos": "Esqueletos de carregamento por tipo de tela (painel, lista, detalhe, formulario) com a casca do hub; use no loading.tsx.",
   "botao-enviar": "BotaoEnviar (trava no envio do form) e BotaoConfirmar (acao irreversivel em dois passos, modal).",
   "status-badge": "Selo de status: ok, atencao, neutro, critico, info. Laranja nao e status.",
   "stat-card": "Card de indicador; valor nulo aparece como 'Não medido', nunca zero.",
