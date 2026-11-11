@@ -7,8 +7,13 @@ import { cn } from "@/lib/utils"
 
 function Label({
   className,
+  obrigatorio = false,
+  children,
   ...props
-}: React.ComponentProps<typeof LabelPrimitive.Root>) {
+}: React.ComponentProps<typeof LabelPrimitive.Root> & {
+  /** Asterisco visual; o campo continua precisando de `required` para validar e ser anunciado. */
+  obrigatorio?: boolean
+}) {
   return (
     <LabelPrimitive.Root
       data-slot="label"
@@ -17,7 +22,14 @@ function Label({
         className
       )}
       {...props}
-    />
+    >
+      {children}
+      {obrigatorio ? (
+        <span aria-hidden className="-ml-1.5 text-destructive">
+          *
+        </span>
+      ) : null}
+    </LabelPrimitive.Root>
   )
 }
 
