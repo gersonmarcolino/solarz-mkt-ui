@@ -18,7 +18,7 @@ A interface é **branca, preta e cinza**. O laranja `#FF4D00` é acento, não co
 | Foco (ring) | cinza escuro |
 | Navegação lateral | preta |
 | Status | verde ok, âmbar atenção, vermelho crítico, azul info |
-| Laranja (`brand`) | no máximo **um ponto por tela**: indicador do item ativo da navegação, badge `brand`, ícone do `StatCard` em destaque, série em destaque de gráfico, logo |
+| Laranja (`brand`) | só acento, nunca ação: ícone dos cards de indicador (`StatCard`), indicador do item ativo da navegação, badge `brand`, série em destaque de gráfico, logo |
 
 Vermelho só para `destructive`. Laranja nunca é status nem erro.
 

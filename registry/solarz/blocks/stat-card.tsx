@@ -12,7 +12,7 @@ export type StatDelta = { value: string; direction: "up" | "down" | "flat" }
 
 /**
  * Card de indicador. `value` nulo vira "Não medido": dado que nao foi medido nunca vira zero.
- * `highlight` (no maximo um por linha) usa o canto assimetrico e e o unico ponto laranja do card.
+ * O icone e sempre laranja (acento da marca); `highlight` (no maximo um por linha) muda o canto e o fundo do icone.
  */
 export function StatCard({
   label,
@@ -48,7 +48,7 @@ export function StatCard({
           <span
             className={cn(
               "flex size-8 shrink-0 items-center justify-center rounded-lg",
-              highlight ? "bg-brand-soft text-brand" : "bg-muted text-foreground"
+              highlight ? "bg-brand-soft text-brand" : "bg-brand/10 text-brand"
             )}
           >
             <Icon className="size-4" />
