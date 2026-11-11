@@ -28,8 +28,10 @@ Vermelho só para `destructive`. Laranja nunca é status nem erro.
 2. Registre o namespace no `components.json`:
 
 ```json
-"registries": { "@solarz": "<URL base>/r/{name}.json" }
+"registries": { "@solarz": "https://raw.githubusercontent.com/gersonmarcolino/solarz-mkt-ui/main/public/r/{name}.json" }
 ```
+
+O registry é servido direto do `main` deste repo (público). Mudança só chega aos projetos depois de `npm run build` + commit + push dos `public/r/*.json`.
 
 3. Instale: `npx shadcn add @solarz/theme @solarz/button @solarz/stat-card`
 
