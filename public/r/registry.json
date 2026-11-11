@@ -1,0 +1,480 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "solarz",
+  "homepage": "https://github.com/gersonmarcolino/solarz-mkt-ui",
+  "items": [
+    {
+      "name": "theme",
+      "type": "registry:theme",
+      "description": "Tokens SolarZ: branco, preto e cinza; laranja #FF4D00 so como acento.",
+      "cssVars": {
+        "theme": {
+          "color-brand": "var(--brand)",
+          "color-brand-soft": "var(--brand-soft)",
+          "color-brand-line": "var(--brand-line)",
+          "color-brand-ink": "var(--brand-ink)",
+          "color-surface": "var(--surface)",
+          "color-surface-2": "var(--surface-2)"
+        },
+        "light": {
+          "brand": "#ff4d00",
+          "brand-soft": "#ffe4d9",
+          "brand-line": "#ffc3ac",
+          "brand-ink": "#8a2b00",
+          "surface": "#f6f6f6",
+          "surface-2": "#fafafa",
+          "background": "oklch(1 0 0)",
+          "foreground": "oklch(0.145 0 0)",
+          "card": "oklch(1 0 0)",
+          "card-foreground": "oklch(0.145 0 0)",
+          "popover": "oklch(1 0 0)",
+          "popover-foreground": "oklch(0.145 0 0)",
+          "primary": "oklch(0.145 0 0)",
+          "primary-foreground": "oklch(0.985 0 0)",
+          "secondary": "oklch(0.97 0 0)",
+          "secondary-foreground": "oklch(0.205 0 0)",
+          "muted": "oklch(0.97 0 0)",
+          "muted-foreground": "oklch(0.556 0 0)",
+          "accent": "oklch(0.97 0 0)",
+          "accent-foreground": "oklch(0.205 0 0)",
+          "destructive": "oklch(0.577 0.245 27.325)",
+          "border": "oklch(0.922 0 0)",
+          "input": "oklch(0.922 0 0)",
+          "ring": "oklch(0.371 0 0)",
+          "chart-1": "oklch(0.205 0 0)",
+          "chart-2": "oklch(0.439 0 0)",
+          "chart-3": "oklch(0.556 0 0)",
+          "chart-4": "oklch(0.708 0 0)",
+          "chart-5": "oklch(0.869 0 0)",
+          "radius": "0.625rem",
+          "sidebar": "oklch(0.145 0 0)",
+          "sidebar-foreground": "oklch(0.985 0 0)",
+          "sidebar-primary": "oklch(0.985 0 0)",
+          "sidebar-primary-foreground": "oklch(0.145 0 0)",
+          "sidebar-accent": "oklch(1 0 0 / 8%)",
+          "sidebar-accent-foreground": "oklch(0.985 0 0)",
+          "sidebar-border": "oklch(1 0 0 / 10%)",
+          "sidebar-ring": "oklch(0.708 0 0)"
+        },
+        "dark": {
+          "brand-soft": "#3a1a0c",
+          "brand-line": "#6b2a0e",
+          "brand-ink": "#ffb899",
+          "surface": "oklch(0.18 0 0)",
+          "surface-2": "oklch(0.2 0 0)",
+          "background": "oklch(0.145 0 0)",
+          "foreground": "oklch(0.985 0 0)",
+          "card": "oklch(0.205 0 0)",
+          "card-foreground": "oklch(0.985 0 0)",
+          "popover": "oklch(0.205 0 0)",
+          "popover-foreground": "oklch(0.985 0 0)",
+          "primary": "oklch(0.985 0 0)",
+          "primary-foreground": "oklch(0.145 0 0)",
+          "secondary": "oklch(0.269 0 0)",
+          "secondary-foreground": "oklch(0.985 0 0)",
+          "muted": "oklch(0.269 0 0)",
+          "muted-foreground": "oklch(0.708 0 0)",
+          "accent": "oklch(0.269 0 0)",
+          "accent-foreground": "oklch(0.985 0 0)",
+          "destructive": "oklch(0.704 0.191 22.216)",
+          "border": "oklch(1 0 0 / 10%)",
+          "input": "oklch(1 0 0 / 15%)",
+          "ring": "oklch(0.708 0 0)",
+          "chart-1": "oklch(0.985 0 0)",
+          "chart-2": "oklch(0.809 0 0)",
+          "chart-3": "oklch(0.708 0 0)",
+          "chart-4": "oklch(0.556 0 0)",
+          "chart-5": "oklch(0.371 0 0)",
+          "sidebar": "oklch(0.12 0 0)",
+          "sidebar-foreground": "oklch(0.985 0 0)",
+          "sidebar-primary": "oklch(0.985 0 0)",
+          "sidebar-primary-foreground": "oklch(0.145 0 0)",
+          "sidebar-accent": "oklch(1 0 0 / 8%)",
+          "sidebar-accent-foreground": "oklch(0.985 0 0)",
+          "sidebar-border": "oklch(1 0 0 / 10%)",
+          "sidebar-ring": "oklch(0.708 0 0)"
+        }
+      }
+    },
+    {
+      "name": "utils",
+      "type": "registry:lib",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "registry/solarz/lib/utils.ts",
+          "type": "registry:lib"
+        }
+      ]
+    },
+    {
+      "name": "avatar",
+      "type": "registry:ui",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@solarz/theme",
+        "@solarz/utils"
+      ],
+      "files": [
+        {
+          "path": "registry/solarz/ui/avatar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "dependencies": [
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@solarz/theme",
+        "@solarz/utils"
+      ],
+      "files": [
+        {
+          "path": "registry/solarz/ui/badge.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "dependencies": [
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@solarz/theme",
+        "@solarz/utils"
+      ],
+      "files": [
+        {
+          "path": "registry/solarz/ui/button.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "registryDependencies": [
+        "@solarz/theme",
+        "@solarz/utils"
+      ],
+      "files": [
+        {
+          "path": "registry/solarz/ui/card.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "checkbox",
+      "type": "registry:ui",
+      "dependencies": [
+        "lucide-react",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@solarz/theme",
+        "@solarz/utils"
+      ],
+      "files": [
+        {
+          "path": "registry/solarz/ui/checkbox.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "dialog",
+      "type": "registry:ui",
+      "dependencies": [
+        "lucide-react",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@solarz/theme",
+        "@solarz/button",
+        "@solarz/utils"
+      ],
+      "files": [
+        {
+          "path": "registry/solarz/ui/dialog.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu",
+      "type": "registry:ui",
+      "dependencies": [
+        "lucide-react",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@solarz/theme",
+        "@solarz/utils"
+      ],
+      "files": [
+        {
+          "path": "registry/solarz/ui/dropdown-menu.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "registryDependencies": [
+        "@solarz/theme",
+        "@solarz/utils"
+      ],
+      "files": [
+        {
+          "path": "registry/solarz/ui/input.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "label",
+      "type": "registry:ui",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@solarz/theme",
+        "@solarz/utils"
+      ],
+      "files": [
+        {
+          "path": "registry/solarz/ui/label.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "select",
+      "type": "registry:ui",
+      "dependencies": [
+        "lucide-react",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@solarz/theme",
+        "@solarz/utils"
+      ],
+      "files": [
+        {
+          "path": "registry/solarz/ui/select.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "separator",
+      "type": "registry:ui",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@solarz/theme",
+        "@solarz/utils"
+      ],
+      "files": [
+        {
+          "path": "registry/solarz/ui/separator.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "skeleton",
+      "type": "registry:ui",
+      "registryDependencies": [
+        "@solarz/theme",
+        "@solarz/utils"
+      ],
+      "files": [
+        {
+          "path": "registry/solarz/ui/skeleton.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "slider",
+      "type": "registry:ui",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@solarz/theme",
+        "@solarz/utils"
+      ],
+      "files": [
+        {
+          "path": "registry/solarz/ui/slider.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "sonner",
+      "type": "registry:ui",
+      "dependencies": [
+        "lucide-react",
+        "next-themes",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@solarz/theme"
+      ],
+      "files": [
+        {
+          "path": "registry/solarz/ui/sonner.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "switch",
+      "type": "registry:ui",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@solarz/theme",
+        "@solarz/utils"
+      ],
+      "files": [
+        {
+          "path": "registry/solarz/ui/switch.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "table",
+      "type": "registry:ui",
+      "registryDependencies": [
+        "@solarz/theme",
+        "@solarz/utils"
+      ],
+      "files": [
+        {
+          "path": "registry/solarz/ui/table.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabs",
+      "type": "registry:ui",
+      "dependencies": [
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@solarz/theme",
+        "@solarz/utils"
+      ],
+      "files": [
+        {
+          "path": "registry/solarz/ui/tabs.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "textarea",
+      "type": "registry:ui",
+      "registryDependencies": [
+        "@solarz/theme",
+        "@solarz/utils"
+      ],
+      "files": [
+        {
+          "path": "registry/solarz/ui/textarea.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "botao-enviar",
+      "type": "registry:component",
+      "description": "BotaoEnviar (trava no envio do form) e BotaoConfirmar (acao irreversivel em dois passos, modal).",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@solarz/theme",
+        "@solarz/button"
+      ],
+      "files": [
+        {
+          "path": "registry/solarz/blocks/botao-enviar.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "section-card",
+      "type": "registry:component",
+      "description": "Bloco com cabecalho, subtitulo e acoes.",
+      "registryDependencies": [
+        "@solarz/theme",
+        "@solarz/utils"
+      ],
+      "files": [
+        {
+          "path": "registry/solarz/blocks/section-card.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "stat-card",
+      "type": "registry:component",
+      "description": "Card de indicador; valor nulo aparece como 'Não medido', nunca zero.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@solarz/theme",
+        "@solarz/utils"
+      ],
+      "files": [
+        {
+          "path": "registry/solarz/blocks/stat-card.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "status-badge",
+      "type": "registry:component",
+      "description": "Selo de status: ok, atencao, neutro, critico, info. Laranja nao e status.",
+      "registryDependencies": [
+        "@solarz/theme",
+        "@solarz/utils"
+      ],
+      "files": [
+        {
+          "path": "registry/solarz/blocks/status-badge.tsx",
+          "type": "registry:component"
+        }
+      ]
+    }
+  ]
+}

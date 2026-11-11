@@ -1,0 +1,25 @@
+{
+  "name": "solarz-mkt-ui",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "registry": "node scripts/gerar-registry.mjs",
+    "typecheck": "tsc --noEmit",
+    "build": "npm run registry && npm run typecheck && shadcn build"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.72.0",
+    "next-themes": "^0.4.6",
+    "radix-ui": "^1.5.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "shadcn": "^4.11.0",
+    "sonner": "^2.0.8",
+    "tailwind-merge": "^3.7.0",
+    "typescript": "^5.9.3"
+  }
+}

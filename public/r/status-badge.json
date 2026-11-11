@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "status-badge",
+  "description": "Selo de status: ok, atencao, neutro, critico, info. Laranja nao e status.",
+  "registryDependencies": [
+    "@solarz/theme",
+    "@solarz/utils"
+  ],
+  "files": [
+    {
+      "path": "registry/solarz/blocks/status-badge.tsx",
+      "content": "import * as React from \"react\"\n\nimport { cn } from \"@/lib/utils\"\n\n/** Tom de status. Laranja nao e status: atencao e ambar. */\nexport type Tone = \"ok\" | \"atencao\" | \"neutro\" | \"critico\" | \"info\"\n\nconst TONE_BADGE: Record<Tone, string> = {\n  ok: \"bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950 dark:text-emerald-300 dark:border-emerald-900\",\n  atencao: \"bg-amber-50 text-amber-800 border-amber-200 dark:bg-amber-950 dark:text-amber-300 dark:border-amber-900\",\n  neutro: \"bg-muted text-muted-foreground border-border\",\n  critico: \"bg-red-50 text-red-700 border-red-200 dark:bg-red-950 dark:text-red-300 dark:border-red-900\",\n  info: \"bg-blue-50 text-blue-700 border-blue-200 dark:bg-blue-950 dark:text-blue-300 dark:border-blue-900\",\n}\n\n/** Selo de status. Vermelho so em falha de verdade. */\nexport function StatusBadge({\n  tone,\n  className,\n  children,\n  ...props\n}: React.ComponentProps<\"span\"> & { tone: Tone }) {\n  return (\n    <span\n      data-slot=\"status-badge\"\n      data-tone={tone}\n      className={cn(\n        \"inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap\",\n        TONE_BADGE[tone],\n        className\n      )}\n      {...props}\n    >\n      {children}\n    </span>\n  )\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:component"
+}
